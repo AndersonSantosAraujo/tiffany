@@ -1,0 +1,74 @@
+[
+  {
+    "productId": 1,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearsmall-link-bracelet-38086855_1047053_ED_M.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Small Link Bracelet",
+    "subname": "in Sterling Silver",
+    "price": 950
+  },
+  {
+    "productId": 2,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearpearl-hoop-earrings-in-sterling-silver-64048732_1028115_ED.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Pearl Hoop Earrings in Sterling Silve",
+    "subname": "",
+    "price": 975
+  },
+  {
+    "productId": 3,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearlink-bracelet-63982180_999830_ED.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Link Bracelet",
+    "subname": "",
+    "price": 6900
+  },
+  {
+    "productId": 4,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearsmall-wrap-necklace-63008931_991693_ED.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Small Wrap Necklace",
+    "subname": "in Rose Gold",
+    "price": 24400
+  },
+  {
+    "productId": 5,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearpearl-bracelet-67063767_1003936_ED.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Pearl Bracelet",
+    "subname": "in Silver, 5-6 mm",
+    "price": 975
+  },
+  {
+    "productId": 6,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearfreshwater-pearl-ring-in-sterling-silver-64048457_1004020_ED_M.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Freshwater Pearl Ring in Sterling Silver",
+    "subname": "",
+    "price": 875
+  },
+  {
+    "productId": 7,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardwearlarge-link-earrings-68533651_1015073_ED.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Large Link Earrings",
+    "subname": "in Yellow Gold",
+    "price": 3950
+  },
+  {
+    "productId": 8,
+    "link": "#",
+    "image": "https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-hardweargraduated-link-necklace-38086766_1025207_ED.jpg?&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp",
+    "brand": "Tiffany HardWear",
+    "name": "Graduated Link Necklace",
+    "subname": "",
+    "price": 17500
+  }
+]

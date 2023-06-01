@@ -1,0 +1,33 @@
+{
+  "Americas": [
+    "United States",
+    "Canada (English)",
+    "Canada (Francais)",
+    "México",
+    "Brazil"
+  ],
+  "Europe": [
+    "United Kingdom",
+    "Austria",
+    "Belgium",
+    "France",
+    "Deutschland",
+    "Ireland",
+    "Italy",
+    "Netherlands",
+    "España",
+    "Россия"
+  ],
+  "Asia / Pacific": [
+    "日本",
+    "中国大陆",
+    "香港/澳門特別行政區",
+    "台灣地區",
+    "India",
+    "한국",
+    "Australia",
+    "Malaysia",
+    "Singapore"
+  ],
+  "All Other Locations": ["International"]
+}

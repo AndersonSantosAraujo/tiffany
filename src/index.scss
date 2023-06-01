@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Santral Light";
+  src: url("../src/fonts/Santral\ Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "SterlingDisplay Roman";
+  src: url("../src/fonts/SterlingDisplay\ Roman.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  font-family: "Santral Light", Arial, Helvetica, sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Santral Light", Arial, Helvetica, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.shelf-slick {
+  position: relative;
+  overflow: hidden;
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    height: 56px;
+    width: 56px;
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      border: solid #000;
+      opacity: 0.75;
+      border-width: 0 1px 1px 0;
+      padding: 5px;
+    }
+
+    &:focus {
+      background-color: #e4e4e4;
+    }
+
+    &.slick-prev {
+      left: 0;
+
+      &::before {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+
+    &.slick-next {
+      right: 0;
+
+      &::before {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+
+    &.slick-disabled {
+      display: none !important;
+      cursor: none;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+  }
+}

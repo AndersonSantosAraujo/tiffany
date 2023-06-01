@@ -1,0 +1,237 @@
+{
+  "Jewelry": {
+    "Shop by Category": [
+      "Necklaces & Pendants",
+      "Earrings",
+      "Bracelets",
+      "Rings",
+      "Fine Watches",
+      "Brooches",
+      "Charms",
+      "Men's Jewelry",
+      "Explore All Categories"
+    ],
+    "Curated Shops": [
+      "Gifts for Her",
+      "Most Popular Jewelry",
+      "New Jewelry",
+      "Online Exclusives",
+      "High Jewelry",
+      "Bold Silver Jewelry",
+      "Dainty Jewelry",
+      "Hoop Earrings",
+      "Stacking Rings"
+    ],
+    "Shop by Metal": [
+      "Gold Jewelry",
+      "Rose Gold Jewelry",
+      "Platinum Jewelry",
+      "Sterling Silver Jewelry",
+      "Shop by Gemstone",
+      "Diamond Jewelry",
+      "Pearl Jewelry",
+      "Aquamarine Jewelry",
+      "Colored Gemstone Jewelry"
+    ],
+    "Featured Collections": [
+      "Tiffany Lock",
+      "Tiffany T",
+      "Tiffany HardWear",
+      "Tiffany Knot",
+      "Tiffany Victoria®",
+      "Return to Tiffany®",
+      "Elsa Peretti®",
+      "Tiffany & Co. Schlumberger®",
+      "Paloma Picasso®",
+      "Explore All Collections"
+    ]
+  },
+  "Gifts": {
+    "Gifts for...": [
+      "Graduation",
+      "Her",
+      "Him",
+      "Baby",
+      "The Home",
+      "The Couple",
+      "Explore All Gifts"
+    ],
+    "Discover": [
+      "Gifts $750 & Under",
+      "Tiffany Blue® Gifts",
+      "Gifts to Personalize",
+      "Anniversary Gifts",
+      "Birthday Gifts",
+      "Gift Cards"
+    ],
+    "Empty": {
+      "main-image": "https://media.tiffany.com/is/image/tiffanydm/Gifts-For-Her_Nav_Flyout_Evergreen-1?$tile$&wid=1168&hei=608&fmt=webp",
+      "text": "Gifts for Her",
+      "cta": "Shop Now"
+    }
+  },
+  "Love & Engagement": {
+    "Engagement": [
+      "Engagement Rings",
+      "Men’s Engagement Rings",
+      "Book an Appointment",
+      {
+        "Wedding": [
+          "Women's Wedding Bands",
+          "Men's Wedding Bands",
+          "Wedding Band Sets",
+          "Couples' Rings",
+          "Begin Your Journey"
+        ]
+      }
+    ],
+    "The Tiffany Difference": [
+      "The Guide to Diamonds",
+      "A Lifetime of Service",
+      "A Tiffany Ring",
+      "Responsible Sourcing",
+      "How to Choose an Engagement Ring"
+    ],
+    "Shop by Shape": [
+      "Round",
+      "Oval",
+      "Emerald",
+      "Princess",
+      "Tiffany True®",
+      "Cushion"
+    ],
+    "Shop by Setting": ["Solitaire", "Halo", "Three Stone"],
+    "Engagement Ring Collections": [
+      "The Tiffany® Setting",
+      "Tiffany True®",
+      "Tiffany Harmony®",
+      "Tiffany Soleste®",
+      "Tiffany Novo®",
+      "Tiffany & Co. Schlumberger®"
+    ],
+    "Wedding Band Collections": [
+      "Tiffany Together",
+      "Tiffany Forever",
+      "Tiffany & Co.®"
+    ]
+  },
+  "Fine Watches": {
+    "Shop By Category": [
+      "Women’s Watches",
+      "Men’s Watches",
+      "Patek Philippe",
+      "All Fine Watches",
+      {
+        "Curated Shops": [
+          "Diamond Watches",
+          "Tiffany Blue Watches",
+          "Explore Fine Watches"
+        ]
+      }
+    ],
+    "Shop By Collection": [
+      "Atlas®",
+      "Tiffany 1837® Makers",
+      "Tiffany Eternity",
+      "Tiffany CT60®",
+      "Tiffany East West®"
+    ],
+    "Empty": {
+      "main-image": "https://media.tiffany.com/is/image/tiffanydm/WATCH-Flyout-Desktop?$tile$&wid=1168&hei=608&fmt=webp",
+      "text": "It's About Time",
+      "cta": "Shop All Fine Watches"
+    }
+  },
+  "Home & Accessories": {
+    "For the Table": [
+      "Tableware",
+      "Glassware & Barware",
+      "Flatware & Trays",
+      "Coffee & Tea"
+    ],
+    "Home": ["Candles", "Decor", "Blankets & Cushions", "Explore All Home"],
+    "Leather Goods": [
+      "Bags",
+      "Small Leather Goods",
+      {
+        "Accessories": [
+          "Scarves, Stoles & Ribbons",
+          "Belts",
+          "Sunglasses",
+          "Baby",
+          "Stationery, Games & Unique Objects",
+          "Explore All Leather Goods & Accessories"
+        ]
+      }
+    ],
+    "Curated Shops": [
+      "Women's Accessories",
+      "Table by Tiffany",
+      "Wedding Gifts",
+      "Housewarming Gifts"
+    ]
+  },
+  "Fragrance": {
+    "Shop by Collection": [
+      "Signature Collection",
+      "Tiffany & Love",
+      "Tiffany & Co. Wild Iris Parfum",
+      "Shop All Fragrance"
+    ],
+    "Empty": {
+      "main-image": "https://media.tiffany.com/is/image/tiffanydm/ROSEGOLDFRAGRANCE_DOTCOM_FLYOUT?$tile$&wid=1760&hei=608&fmt=webp",
+      "text": "Tiffany & Co. Rose Gold Eau de Parfum",
+      "cta": "Shop the New Fragrance"
+    }
+  },
+  "Men’s": {
+    "Shop by Category": [
+      "Necklaces & Pendants",
+      "Bracelets",
+      "Rings",
+      "Accessories",
+      "Watches",
+      "Bar & Drinkware",
+      "Games & Novelties",
+      "Explore All Men’s"
+    ],
+    "Discover": [
+      "Gifts for Him",
+      "Men's Engagement Rings",
+      "Tiffany & Sports",
+      "The Modern Man's Guide to Wearing Jewelry"
+    ],
+    "Empty": {
+      "main-image": "https://media.tiffany.com/is/image/tiffanydm/LOCK-Flyout-Desktop-1?$tile$&wid=1168&hei=608&fmt=webp",
+      "text": "For the Modern Man",
+      "cta": "Shop Men’s Jewelry"
+    }
+  },
+  "Stories": {
+    "Now Trending": [
+      "Now Open: The Landmark",
+      "This Is Tiffany T",
+      "This Is Tiffany HardWear",
+      "Nike/Tiffany",
+      "Discover Tiffany Lock",
+      "Table by Tiffany",
+      "Beyoncé for Tiffany & Co.",
+      "Behind the Scenes with Beyoncé and JAY-Z",
+      "View All Stories"
+    ],
+    "The House of Tiffany & Co.": [
+      "Sustainability",
+      "Our Diamond Traceability Story",
+      "High Jewelry",
+      "The World of Tiffany",
+      "Jewelry Design and Innovation Workshop",
+      "Tiffany & Sports",
+      "The Tiffany Diamond"
+    ],
+    "Empty": {
+      "main-image": "https://media.tiffany.com/is/image/tiffanydm/T-Flyout-Desktop?$tile$&wid=1168&hei=608&fmt=webp",
+      "text": "This is Tiffany T",
+      "cta": "Explore the Collection"
+    }
+  }
+}

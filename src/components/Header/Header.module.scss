@@ -1,0 +1,42 @@
+$main-color: #81d8d0;
+$black: #000;
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &__topbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $main-color;
+    padding: 13px 40px 19px;
+
+    p,
+    a,
+    span {
+      font-size: 14px;
+      color: $black;
+    }
+
+    p,
+    span {
+      font-weight: normal;
+    }
+
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    span {
+      margin: 0 16px;
+    }
+
+    &--close {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
