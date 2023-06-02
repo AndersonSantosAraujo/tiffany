@@ -38,6 +38,9 @@ const Shelf = ({ products }) => {
               data-id={productId}
               key={productId}
             >
+              <button className={styles["shelf__item--wishlist"]}>
+                Wishlist
+              </button>
               <a href={link} className={styles["shelf__item--link"]}>
                 <div>
                   <img

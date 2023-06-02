@@ -8,6 +8,7 @@ $main-color: #81d8d0;
   margin-bottom: 60px;
 
   &__item {
+    position: relative;
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
@@ -15,6 +16,35 @@ $main-color: #81d8d0;
     width: 100%;
     max-width: 432px;
     padding-right: 8px;
+
+    &--wishlist {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 0;
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        &::before {
+          background: url("../../assets/wishlisticon-empty.gif") no-repeat
+            center center;
+          background-size: contain;
+        }
+      }
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url("../../assets/Wishlist.svg") no-repeat center center;
+        background-size: contain;
+      }
+    }
 
     &--brand {
       font-size: 14px;
