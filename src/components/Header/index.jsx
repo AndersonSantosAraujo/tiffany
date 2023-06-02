@@ -1,7 +1,13 @@
+import { useContext } from "react";
+import { MinicartContext } from "../Minicart/MinicartContext";
+import { CaretDown, X } from "phosphor-react";
 import styles from "./Header.module.scss";
+import classNames from "classnames";
 // import menuDesktop from "../../data/menuDesktop.json";
 
 const Header = () => {
+  const minicartCtx = useContext(MinicartContext);
+
   return (
     <header className={styles["header"]}>
       <div className={styles["header__topbar"]}>
@@ -15,10 +21,15 @@ const Header = () => {
         <div className={styles["header__topbar--location"]}>
           <a href="#">Shop the U.S. site</a>
           <span> Or </span>
-          <a href="#">Choose location</a>
+          <a href="#">
+            Choose location <CaretDown size={12} weight="fill" />
+          </a>
         </div>
 
-        <button className={styles["header__topbar--close"]}>Close</button>
+        <button className={styles["header__topbar--close"]}>
+          Close
+          <X size={24} weight="thin" />
+        </button>
       </div>
 
       <div className={styles["header__midbar"]}>
@@ -51,8 +62,6 @@ const Header = () => {
             <img
               src="https://media.tiffany.com/is/content/tiffanydm/tiffco-logo-2?$tile$&wid=1267&hei=3106"
               alt="Logo Tiffany & Co."
-              height={26}
-              width={191}
             />
           </a>
         </div>
@@ -61,44 +70,66 @@ const Header = () => {
           <a
             href="#"
             title="Book an Appointment"
-            className={styles["header__midbar-left--book-appointment"]}
+            className={styles["header__midbar-right--book-appointment"]}
           >
             Book an Appointment
           </a>
           <a
             href="#"
             title="SignIn"
-            className={styles["header__midbar-left--signin"]}
+            className={styles["header__midbar-right--signin"]}
           >
             SignIn
           </a>
           <a
             href="#"
             title="Favorites"
-            className={styles["header__midbar-left--favorites"]}
+            className={styles["header__midbar-right--favorites"]}
           >
             Favorites
           </a>
           <a
             href="#"
             title="Shopping Bag"
-            className={styles["header__midbar-left--shopping-bag"]}
+            className={styles["header__midbar-right--shopping-bag"]}
           >
             Shopping Bag
+            <span
+              className={classNames(
+                styles["header__midbar-right--shopping-bag-quantity"],
+                { [styles["full"]]: minicartCtx.items.length > 0 },
+              )}
+            ></span>
           </a>
         </div>
       </div>
 
       <nav className={styles["header__navbar"]}>
         <ul>
-          <li>Jewelry</li>
-          <li>Gifts</li>
-          <li>Love & Engagement</li>
-          <li>Fine Watches</li>
-          <li>Home & Accessories</li>
-          <li>Fragrance</li>
-          <li>Men’s</li>
-          <li>Stories</li>
+          <li>
+            <a href="#">Jewelry</a>
+          </li>
+          <li>
+            <a href="#">Gifts</a>
+          </li>
+          <li>
+            <a href="#">Love & Engagement</a>
+          </li>
+          <li>
+            <a href="#">Fine Watches</a>
+          </li>
+          <li>
+            <a href="#">Home & Accessories</a>
+          </li>
+          <li>
+            <a href="#">Fragrance</a>
+          </li>
+          <li>
+            <a href="#">Men’s</a>
+          </li>
+          <li>
+            <a href="#">Stories</a>
+          </li>
         </ul>
       </nav>
     </header>

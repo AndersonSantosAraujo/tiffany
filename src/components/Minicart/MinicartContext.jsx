@@ -6,11 +6,13 @@ export const MinicartContext = createContext({});
 export const MinicartStorage = ({ children }) => {
   // eslint-disable-next-line no-unused-vars
   const [loading, setLoading] = useState(false);
+  const [items, setItems] = useState([]);
 
   return (
     <MinicartContext.Provider
       value={{
         loading,
+        items,
       }}
     >
       {children}

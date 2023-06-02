@@ -32,11 +32,256 @@ $black: #000;
 
     span {
       margin: 0 16px;
+
+      + a {
+        padding-right: 8px;
+        text-decoration: none;
+      }
     }
 
     &--close {
       position: absolute;
+      top: 10px;
       right: 0;
+      font-size: 0;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &__midbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px 0;
+    border-top: 4px solid $main-color;
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      &--find {
+        font-size: 0;
+        margin-right: 40px;
+
+        &:hover {
+          &::before {
+            background: url("../../assets/search-icon.gif") no-repeat center
+              center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/Search-1.svg") no-repeat center center;
+          background-size: contain;
+        }
+      }
+
+      &--store {
+        font-size: 0;
+        margin-right: 40px;
+
+        &:hover {
+          &::before {
+            background: url("../../assets/store-locator.gif") no-repeat center
+              center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/StoreLocator.svg") no-repeat center
+            center;
+          background-size: contain;
+        }
+      }
+
+      &--contact {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+          &::before {
+            background: url("../../assets/customer-service.gif") no-repeat
+              center center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/Concierge.svg") no-repeat center center;
+          background-size: contain;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &-center {
+      img {
+        height: 26px;
+        width: 191px;
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+
+      &--book-appointment {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+          &::before {
+            background: url("../../assets/book-an-apppointment.gif") no-repeat
+              center center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/Appointment.svg") no-repeat center
+            center;
+          background-size: contain;
+          margin-right: 10px;
+        }
+      }
+
+      &--signin {
+        font-size: 0;
+        margin-left: 40px;
+
+        &:hover {
+          &::before {
+            background: url("../../assets/my-account.gif") no-repeat center
+              center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/MyAccount.svg") no-repeat center center;
+          background-size: contain;
+        }
+      }
+
+      &--favorites {
+        font-size: 0;
+        margin-left: 40px;
+
+        &:hover {
+          &::before {
+            background: url("../../assets/wishlisticon-empty.gif") no-repeat
+              center center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/Wishlist.svg") no-repeat center center;
+          background-size: contain;
+        }
+      }
+
+      &--shopping-bag {
+        display: flex;
+        align-items: center;
+        font-size: 0;
+        margin-left: 40px;
+
+        &:hover {
+          &::before {
+            background: url("../../assets/shoppingbag-empty.gif") no-repeat
+              center center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/ShoppingBag.svg") no-repeat center
+            center;
+          background-size: contain;
+        }
+
+        &.full {
+          background: url("../../assets/ShoppingBagFull.svg") no-repeat center
+            center;
+          background-size: contain;
+        }
+
+        &-quantity {
+          font-size: 12px;
+          font-weight: normal;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+
+  &__navbar {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        a {
+          display: inline-block;
+          padding: 16px 28px;
+          font-size: 14px;
+          font-weight: normal;
+          border-bottom: 2px solid transparent;
+
+          &:hover {
+            position: relative;
+            font-weight: bold;
+
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 10px;
+              display: block;
+              height: 2px;
+              width: calc(100% - 56px);
+              background-color: $main-color;
+            }
+          }
+        }
+      }
     }
   }
 }
