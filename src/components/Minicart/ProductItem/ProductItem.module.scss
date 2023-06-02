@@ -1,0 +1,79 @@
+$main-color: #81d8d0;
+
+.product-item {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  margin: 8px 0 24px;
+  padding-right: 6px;
+  border-bottom: 1px solid $main-color;
+
+  a {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__image {
+    img {
+      width: 165px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 24px;
+    height: 170px;
+
+    &--name {
+      font-family: "SterlingDisplay Roman", "Times New Roman", Times, serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+      margin-bottom: 5px;
+      width: 100%;
+      max-width: 160px;
+      margin-bottom: 8px;
+    }
+
+    &--price {
+      font-size: 12px;
+      font-weight: normal;
+      color: #000;
+    }
+
+    &--quantity {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 16px;
+    }
+
+    &--remove {
+      position: relative;
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      font-weight: bold;
+      color: #000;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -12px;
+        top: 50%;
+        border: solid #000;
+        opacity: 0.5;
+        border-width: 0 1px 1px 0;
+        padding: 2px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+  }
+}

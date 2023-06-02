@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { MinicartContext } from "../Minicart/MinicartContext";
+import Minicart from "../Minicart";
 import { CaretDown, X } from "phosphor-react";
 import styles from "./Header.module.scss";
 import classNames from "classnames";
@@ -91,16 +92,24 @@ const Header = () => {
           <a
             href="#"
             title="Shopping Bag"
-            className={styles["header__midbar-right--shopping-bag"]}
+            className={classNames(
+              styles["header__midbar-right--shopping-bag"],
+              {
+                [styles["header__midbar-right--shopping-bag-full"]]:
+                  minicartCtx.items.length > 0,
+              },
+            )}
+            onMouseEnter={() => minicartCtx.setShowMinicart(true)}
+            onMouseLeave={() => minicartCtx.setShowMinicart(false)}
           >
             Shopping Bag
             <span
-              className={classNames(
-                styles["header__midbar-right--shopping-bag-quantity"],
-                { [styles["full"]]: minicartCtx.items.length > 0 },
-              )}
-            ></span>
+              className={styles["header__midbar-right--shopping-bag-quantity"]}
+            >
+              {minicartCtx.qtItems}
+            </span>
           </a>
+          <Minicart />
         </div>
       </div>
 

@@ -28,7 +28,7 @@ const Video = ({ videoSrc }) => {
 };
 
 Video.propTypes = {
-  videoSrc: PropTypes.number.isRequired,
+  videoSrc: PropTypes.string.isRequired,
 };
 
 export default Video;

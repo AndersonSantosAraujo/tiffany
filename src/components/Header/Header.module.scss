@@ -11,7 +11,9 @@ $black: #000;
     justify-content: space-between;
     align-items: center;
     background-color: $main-color;
+    border-bottom: 4px solid $main-color;
     padding: 13px 40px 19px;
+    z-index: 9999;
 
     p,
     a,
@@ -55,7 +57,6 @@ $black: #000;
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px 0;
-    border-top: 4px solid $main-color;
 
     &-left {
       display: flex;
@@ -148,6 +149,7 @@ $black: #000;
         align-items: center;
         font-size: 12px;
         font-weight: bold;
+        z-index: 999999;
 
         &:hover {
           &::before {
@@ -172,6 +174,7 @@ $black: #000;
       &--signin {
         font-size: 0;
         margin-left: 40px;
+        z-index: 999999;
 
         &:hover {
           &::before {
@@ -194,6 +197,7 @@ $black: #000;
       &--favorites {
         font-size: 0;
         margin-left: 40px;
+        z-index: 999999;
 
         &:hover {
           &::before {
@@ -218,6 +222,7 @@ $black: #000;
         align-items: center;
         font-size: 0;
         margin-left: 40px;
+        z-index: 999999;
 
         &:hover {
           &::before {
@@ -237,10 +242,12 @@ $black: #000;
           background-size: contain;
         }
 
-        &.full {
-          background: url("../../assets/ShoppingBagFull.svg") no-repeat center
-            center;
-          background-size: contain;
+        &-full {
+          &::before {
+            background: url("../../assets/ShoppingBagFull.svg") no-repeat center
+              center;
+            background-size: contain;
+          }
         }
 
         &-quantity {

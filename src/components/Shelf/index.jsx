@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { MinicartContext } from "../Minicart/MinicartContext";
 import Slider from "react-slick";
 import PropTypes from "prop-types";
 import styles from "./Shelf.module.scss";
 
 const Shelf = ({ products }) => {
+  const minicartCtX = useContext(MinicartContext);
+
   var settings = {
     infinite: false,
     speed: 500,
@@ -31,45 +35,48 @@ const Shelf = ({ products }) => {
   return (
     <div className={styles["shelf"]}>
       <Slider {...settings}>
-        {products.map(
-          ({ productId, link, image, brand, name, subname, price }) => (
-            <div
-              className={styles["shelf__item"]}
-              data-id={productId}
-              key={productId}
+        {products.map((product) => (
+          <div
+            className={styles["shelf__item"]}
+            data-id={product.productId}
+            key={product.productId}
+          >
+            <button className={styles["shelf__item--wishlist"]}>
+              Wishlist
+            </button>
+            <a href={product.link} className={styles["shelf__item--link"]}>
+              <div>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className={styles["shelf__item--image"]}
+                />
+              </div>
+              <div>
+                <p className={styles["shelf__item--brand"]}>{product.brand}</p>
+                <p className={styles["shelf__item--name"]}>{product.name}</p>
+                <p className={styles["shelf__item--subname"]}>
+                  {product.subname}
+                </p>
+              </div>
+            </a>
+            <button
+              className={styles["shelf__item--add-to-bag"]}
+              onClick={() => minicartCtX.addToCart(product)}
             >
-              <button className={styles["shelf__item--wishlist"]}>
-                Wishlist
-              </button>
-              <a href={link} className={styles["shelf__item--link"]}>
-                <div>
-                  <img
-                    src={image}
-                    alt={name}
-                    className={styles["shelf__item--image"]}
-                  />
-                </div>
-                <div>
-                  <p className={styles["shelf__item--brand"]}>{brand}</p>
-                  <p className={styles["shelf__item--name"]}>{name}</p>
-                  <p className={styles["shelf__item--subname"]}>{subname}</p>
-                </div>
-              </a>
-              <button className={styles["shelf__item--add-to-bag"]}>
-                <span>
-                  {price.toLocaleString("en-US", {
-                    style: "currency",
-                    currency: "USD",
-                  })}
-                </span>
-                <span className={styles["shelf__item--btn-name"]}>
-                  <span>Add to Bag</span>
-                  <span>Add to Bag</span>
-                </span>
-              </button>
-            </div>
-          ),
-        )}
+              <span>
+                {product.price.toLocaleString("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                })}
+              </span>
+              <span className={styles["shelf__item--btn-name"]}>
+                <span>Add to Bag</span>
+                <span>Add to Bag</span>
+              </span>
+            </button>
+          </div>
+        ))}
       </Slider>
     </div>
   );
