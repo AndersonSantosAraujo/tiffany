@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { MinicartContext } from "../Minicart/MinicartContext";
 import Minicart from "../Minicart";
 import { CaretDown, X } from "phosphor-react";
@@ -7,10 +7,41 @@ import classNames from "classnames";
 // import menuDesktop from "../../data/menuDesktop.json";
 
 const Header = () => {
+  const [prevScroll, setPrevScroll] = useState(window.scrollY);
+  const [navbarTop, setNavbarTop] = useState("0");
   const minicartCtx = useContext(MinicartContext);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isMediumScreen = window.innerWidth < 1024;
+      const isMobileScreen = window.innerWidth < 600;
+      const topbar = isMobileScreen ? 98 : isMediumScreen ? 78 : 48;
+      const header = isMobileScreen ? 213 : isMediumScreen ? 138 : 142;
+
+      const currentScroll = window.scrollY;
+      if (prevScroll > currentScroll) {
+        if (currentScroll <= topbar + 2) {
+          setNavbarTop("0px");
+        } else {
+          setNavbarTop(`-${topbar}px`);
+        }
+      } else {
+        if (currentScroll > header) {
+          setNavbarTop(`-${header}px`);
+        }
+      }
+      setPrevScroll(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScroll]);
+
   return (
-    <header className={styles["header"]}>
+    <header className={styles["header"]} style={{ top: navbarTop }}>
       <div className={styles["header__topbar"]}>
         <div className={styles["header__topbar--info"]}>
           <p>
@@ -35,6 +66,13 @@ const Header = () => {
 
       <div className={styles["header__midbar"]}>
         <div className={styles["header__midbar-left"]}>
+          <a
+            href="#"
+            title="Hamburger"
+            className={styles["header__midbar-left--hamburger"]}
+          >
+            Hamburger
+          </a>
           <a
             href="#"
             title="Find"
@@ -111,6 +149,15 @@ const Header = () => {
           </a>
           <Minicart />
         </div>
+      </div>
+
+      <div className={styles["header__searchbar"]}>
+        <button className={styles["header__searchbar--btn"]}>Search</button>
+        <input
+          type="text"
+          className={styles["header__searchbar--input"]}
+          placeholder="Search..."
+        />
       </div>
 
       <nav className={styles["header__navbar"]}>

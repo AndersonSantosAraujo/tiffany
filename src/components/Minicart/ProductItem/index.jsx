@@ -24,8 +24,7 @@ const ProductItem = ({
         <div className={styles["product-item__content"]}>
           <div>
             <p className={styles["product-item__content--name"]}>
-              {brand}
-              {name}
+              {brand}:{name}
             </p>
             <p className={styles["product-item__content--price"]}>
               {price.toLocaleString("en-US", {

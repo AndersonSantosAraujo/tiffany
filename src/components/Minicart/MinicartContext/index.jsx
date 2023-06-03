@@ -10,17 +10,29 @@ export const MinicartStorage = ({ children }) => {
   const [showMinicart, setShowMinicart] = useState(false);
 
   useEffect(() => {
-    console.log(items);
+    const localMinicartContext = JSON.parse(
+      localStorage.getItem("minicartContext"),
+    );
+
+    localMinicartContext?.length > 0 && setItems(localMinicartContext);
+  }, []);
+
+  useEffect(() => {
+    const localMinicartContext = JSON.parse(
+      localStorage.getItem("minicartContext"),
+    );
+    if (localMinicartContext !== items)
+      localStorage.setItem("minicartContext", JSON.stringify(items));
+
     const priceTotal = items.reduce((total, item) => {
       return item.price * item.quantity + total;
     }, 0);
     setTotal(priceTotal);
 
     const qtTotal = items.reduce((total, item) => {
-      return item.quantity + qtItems;
+      console.log(item);
+      return item?.quantity + total;
     }, 0);
-
-    setTotal(priceTotal);
     setQtItems(qtTotal);
   }, [items]);
 

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styles from "./Video.module.scss";
+import Button from "../Button";
 
 const Video = ({ videoSrc }) => {
   return (
@@ -21,7 +22,12 @@ const Video = ({ videoSrc }) => {
           Our brand ambassadors redefine Tiffany HardWear in our latest
           campaign.
         </p>
-        <a href="#">Shop the Collection</a>
+        <Button
+          link="#"
+          name="Shop the Collection"
+          marginTop={24}
+          marginBottom={8}
+        />
       </div>
     </div>
   );

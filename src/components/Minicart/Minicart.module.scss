@@ -68,19 +68,28 @@ $black: #000;
 
       &--signin {
         position: relative;
-        display: block;
+        display: inline-block;
         font-size: 14px;
         font-weight: bold;
         color: #000;
         margin-bottom: 40px;
         cursor: pointer;
 
+        background: linear-gradient(0, #00a4b7, #00a4b7) 0 100% no-repeat;
+        background-size: 0 1px;
+        transition: background-size 0.5s;
+        padding-bottom: 5px;
+
+        &:hover {
+          background-size: 100% 1px;
+        }
+
         &::after {
           content: "";
           display: inline-block;
           position: absolute;
           left: 55px;
-          top: 50%;
+          top: 40%;
           border: solid #000;
           opacity: 0.5;
           border-width: 0 1px 1px 0;
@@ -100,17 +109,26 @@ $black: #000;
 
       &--view-bag {
         position: relative;
-        display: block;
+        display: inline- "" block;
         font-size: 16px;
         font-weight: bold;
         color: #000;
+
+        background: linear-gradient(0, #00a4b7, #00a4b7) 0 100% no-repeat;
+        background-size: 0 1px;
+        transition: background-size 0.5s;
+        padding-bottom: 5px;
+
+        &:hover {
+          background-size: 100% 1px;
+        }
 
         &::after {
           content: "";
           display: inline-block;
           position: absolute;
           left: 80px;
-          top: 60%;
+          top: 45%;
           border: solid #000;
           opacity: 0.5;
           border-width: 0 1px 1px 0;
@@ -133,6 +151,14 @@ $black: #000;
         font-size: 14px;
         font-weight: bold;
         color: #fff;
+
+        &:hover {
+          background-color: $main-color;
+
+          span {
+            color: #000;
+          }
+        }
       }
     }
 

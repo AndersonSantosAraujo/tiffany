@@ -1,25 +1,55 @@
 $main-color: #81d8d0;
 $black: #000;
+$white: #fff;
 
 .header {
+  position: fixed !important;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 999;
+
   display: flex;
   flex-direction: column;
+  background-color: $white;
+  width: 100%;
 
   &__topbar {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: $main-color;
     border-bottom: 4px solid $main-color;
-    padding: 13px 40px 19px;
+    height: 52px;
+    padding: 0 40px;
     z-index: 9999;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+      padding: 16px;
+      min-height: 80px;
+    }
+
+    @media (max-width: 600px) {
+      min-height: 102px;
+    }
 
     p,
     a,
     span {
       font-size: 14px;
       color: $black;
+
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
+
+      @media (max-width: 600px) {
+        width: 95%;
+      }
     }
 
     p,
@@ -58,13 +88,52 @@ $black: #000;
     align-items: center;
     padding: 16px 24px 0;
 
+    @media (max-width: 1024px) {
+      padding: 16px 24px;
+    }
+
     &-left {
       display: flex;
       align-items: center;
 
+      &--hamburger {
+        font-size: 0;
+        margin-right: 40px;
+
+        @media (min-width: 1024px) {
+          display: none;
+        }
+
+        @media (max-width: 600px) {
+          margin-right: 20px;
+        }
+
+        &:hover {
+          &::before {
+            background: url("../../assets/hamburger-1.gif") no-repeat center
+              center;
+            background-size: contain;
+          }
+        }
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: url("../../assets/Hamburger-Menu.svg") no-repeat center
+            center;
+          background-size: contain;
+        }
+      }
+
       &--find {
         font-size: 0;
         margin-right: 40px;
+
+        @media (max-width: 600px) {
+          display: none;
+        }
 
         &:hover {
           &::before {
@@ -87,6 +156,10 @@ $black: #000;
       &--store {
         font-size: 0;
         margin-right: 40px;
+
+        @media (max-width: 900px) {
+          display: none;
+        }
 
         &:hover {
           &::before {
@@ -113,6 +186,10 @@ $black: #000;
         font-size: 12px;
         font-weight: bold;
 
+        @media (max-width: 900px) {
+          display: none;
+        }
+
         &:hover {
           &::before {
             background: url("../../assets/customer-service.gif") no-repeat
@@ -137,6 +214,10 @@ $black: #000;
       img {
         height: 26px;
         width: 191px;
+
+        @media (max-width: 600px) {
+          width: 128px;
+        }
       }
     }
 
@@ -150,6 +231,10 @@ $black: #000;
         font-size: 12px;
         font-weight: bold;
         z-index: 999999;
+
+        @media (max-width: 900px) {
+          display: none;
+        }
 
         &:hover {
           &::before {
@@ -176,6 +261,10 @@ $black: #000;
         margin-left: 40px;
         z-index: 999999;
 
+        @media (max-width: 900px) {
+          display: none;
+        }
+
         &:hover {
           &::before {
             background: url("../../assets/my-account.gif") no-repeat center
@@ -198,6 +287,10 @@ $black: #000;
         font-size: 0;
         margin-left: 40px;
         z-index: 999999;
+
+        @media (max-width: 600px) {
+          margin-left: 20px;
+        }
 
         &:hover {
           &::before {
@@ -223,6 +316,10 @@ $black: #000;
         font-size: 0;
         margin-left: 40px;
         z-index: 999999;
+
+        @media (max-width: 600px) {
+          margin-left: 20px;
+        }
 
         &:hover {
           &::before {
@@ -259,7 +356,52 @@ $black: #000;
     }
   }
 
+  &__searchbar {
+    display: flex;
+    padding: 6px 16px;
+    border-top: 2px solid $main-color;
+
+    @media (min-width: 600px) {
+      display: none;
+    }
+
+    &--btn {
+      font-size: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin: 0 10px;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url("../../assets/Search-1.svg") no-repeat center center;
+        background-size: contain;
+      }
+    }
+
+    &--input {
+      font-size: 16px;
+      color: #909090;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      padding: 10px 0;
+
+      &:focus,
+      &:active {
+        outline: none;
+      }
+    }
+  }
+
   &__navbar {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
     ul {
       display: flex;
       justify-content: center;
@@ -272,6 +414,10 @@ $black: #000;
           font-size: 14px;
           font-weight: normal;
           border-bottom: 2px solid transparent;
+
+          @media (max-width: 1100px) {
+            padding: 16px 24px;
+          }
 
           &:hover {
             position: relative;
