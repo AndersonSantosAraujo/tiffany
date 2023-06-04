@@ -5,7 +5,6 @@ $white: #fff;
   position: relative;
   margin: 0 auto;
   max-width: 1600px;
-  aspect-ratio: 16/9;
   margin-bottom: 80px;
 
   &__content {
@@ -15,11 +14,20 @@ $white: #fff;
     bottom: 80px;
     width: 100%;
 
+    @media (max-width: 900px) {
+      position: initial;
+      margin-top: 10px;
+    }
+
     h3 {
       font-size: 24px;
       font-weight: bold;
       color: $white;
       text-align: center;
+
+      @media (max-width: 900px) {
+        color: $black;
+      }
     }
 
     p {
@@ -31,6 +39,12 @@ $white: #fff;
       font-weight: normal;
       color: $white;
       text-align: center;
+
+      @media (max-width: 900px) {
+        color: $black;
+        max-width: none;
+        margin: 20px auto 0;
+      }
     }
   }
 }

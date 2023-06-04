@@ -1,8 +1,24 @@
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 import styles from "./Video.module.scss";
 import Button from "../Button";
 
-const Video = ({ videoSrc }) => {
+const Video = ({ videoSrcDesktop, videoSrcMobile, breakpoint }) => {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= breakpoint);
+  const aspectRatio = isDesktop ? "16 / 9" : "1 / 1";
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= breakpoint);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [breakpoint]);
+
   return (
     <div className={styles["video"]}>
       <video
@@ -14,8 +30,9 @@ const Video = ({ videoSrc }) => {
         playsInline
         disablePictureInPicture
         preload="auto"
-        src={videoSrc}
-      ></video>
+        src={isDesktop ? videoSrcDesktop : videoSrcMobile}
+        style={{ aspectRatio }}
+      />
       <div className={styles["video__content"]}>
         <h3>This Is Tiffany HardWear</h3>
         <p>
@@ -34,7 +51,9 @@ const Video = ({ videoSrc }) => {
 };
 
 Video.propTypes = {
-  videoSrc: PropTypes.string.isRequired,
+  videoSrcDesktop: PropTypes.string.isRequired,
+  videoSrcMobile: PropTypes.string.isRequired,
+  breakpoint: PropTypes.number.isRequired,
 };
 
 export default Video;

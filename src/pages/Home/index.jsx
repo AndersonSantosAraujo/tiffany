@@ -11,7 +11,11 @@ const Home = () => {
     <>
       <Header />
       <section className={styles["container"]}>
-        <Video videoSrc="https://media.tiffany.com/is/content/tiffanydm/ZOE_HARDWEAR_LIKEYOUMEANIT_Mobile" />
+        <Video
+          videoSrcDesktop="https://media.tiffany.com/is/content/tiffanydm/ZOE_HARDWEAR_LIKEYOUMEANIT_Mobile"
+          videoSrcMobile="https://media.tiffany.com/is/content/tiffanydm/ZOE_HARDWEAR_LIKEYOUMEANIT_Desktop-1"
+          breakpoint={900}
+        />
         <Shelf products={products} />
         <Button link="#" name="Shop Now" marginTop={10} marginBottom={60} />
         <DoubleCard />

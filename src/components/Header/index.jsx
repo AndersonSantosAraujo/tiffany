@@ -4,11 +4,13 @@ import Minicart from "../Minicart";
 import { CaretDown, X } from "phosphor-react";
 import styles from "./Header.module.scss";
 import classNames from "classnames";
+import MobileMenu from "../MobileMenu";
 // import menuDesktop from "../../data/menuDesktop.json";
 
 const Header = () => {
   const [prevScroll, setPrevScroll] = useState(window.scrollY);
   const [navbarTop, setNavbarTop] = useState("0");
+  const [showMenu, setShowMenu] = useState(true);
   const minicartCtx = useContext(MinicartContext);
 
   useEffect(() => {
@@ -70,6 +72,7 @@ const Header = () => {
             href="#"
             title="Hamburger"
             className={styles["header__midbar-left--hamburger"]}
+            onClick={() => setShowMenu(true)}
           >
             Hamburger
           </a>
@@ -188,6 +191,8 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+      <MobileMenu showMenu={showMenu} setShowMenu={setShowMenu} />
     </header>
   );
 };

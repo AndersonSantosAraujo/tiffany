@@ -29,6 +29,13 @@ const Shelf = ({ products }) => {
           slidesToScroll: 2,
         },
       },
+      {
+        breakpoint: 475,
+        settings: {
+          slidesToShow: 1.5,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 

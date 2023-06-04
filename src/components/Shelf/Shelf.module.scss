@@ -12,7 +12,7 @@ $main-color: #81d8d0;
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
-    height: 560px;
+    height: 100%;
     width: 100%;
     max-width: 432px;
     padding-right: 8px;
@@ -82,15 +82,21 @@ $main-color: #81d8d0;
       background-color: #000;
       padding: 16px 24px;
 
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+
       &:hover {
-        background-color: $main-color;
+        @media (min-width: 600px) {
+          background-color: $main-color;
 
-        span {
-          color: #000;
-        }
+          span {
+            color: #000;
+          }
 
-        .shelf__item--btn-name {
-          transform: translateY(-35px);
+          .shelf__item--btn-name {
+            transform: translateY(-35px);
+          }
         }
       }
 
@@ -109,6 +115,15 @@ $main-color: #81d8d0;
       right: 16px;
       top: 16px;
       transition: 0.3s;
+
+      @media (max-width: 600px) {
+        margin-top: 10px;
+        position: initial;
+
+        span:last-child {
+          display: none;
+        }
+      }
     }
   }
 }

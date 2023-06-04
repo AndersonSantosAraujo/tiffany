@@ -1,0 +1,220 @@
+{
+  "Jewelry": {
+    "categories": {
+      "Shop by Category": [
+        "Necklaces & Pendants",
+        "Earrings",
+        "Bracelets",
+        "Rings",
+        "Fine Watches",
+        "Brooches",
+        "Charms",
+        "Men's Jewelry",
+        { "link": "Explore All Categories" }
+      ],
+      "Curated Shops": [
+        "Gifts for Her",
+        "Most Popular Jewelry",
+        "New Jewelry",
+        "Online Exclusives",
+        "High Jewelry",
+        "Bold Silver Jewelry",
+        "Dainty Jewelry",
+        "Hoop Earrings",
+        "Stacking Rings"
+      ],
+      "Shop by Metal": [
+        "Gold Jewelry",
+        "Rose Gold Jewelry",
+        "Platinum Jewelry",
+        "Sterling Silver Jewelry"
+      ],
+      "Shop by Gemstone": [
+        "Diamond Jewelry",
+        "Pearl Jewelry",
+        "Aquamarine Jewelry",
+        "Colored Gemstone Jewelry"
+      ],
+      "Featured Collections": [
+        "Tiffany Lock",
+        "Tiffany T",
+        "Tiffany HardWear",
+        "Tiffany Knot",
+        "Tiffany Victoria®",
+        "Return to Tiffany®",
+        "Elsa Peretti®",
+        "Tiffany & Co. Schlumberger®",
+        "Paloma Picasso®",
+        { "link": "Explore All Collections" }
+      ]
+    }
+  },
+  "Gifts": {
+    "categories": {
+      "Gifts for...": [
+        "Graduation",
+        "Her",
+        "Him",
+        "Baby",
+        "The Home",
+        "The Couple",
+        { "link": "Explore All Gifts" }
+      ],
+      "Discover": [
+        "Gifts $750 & Under",
+        "Tiffany Blue® Gifts",
+        "Gifts to Personalize",
+        "Anniversary Gifts",
+        "Birthday Gifts",
+        "Gift Cards"
+      ]
+    }
+  },
+  "Love & Engagement": {
+    "categories": {
+      "Engagement": [
+        "Engagement Rings",
+        "Men’s Engagement Rings",
+        { "link": "Book an Appointment" }
+      ],
+      "Wedding": [
+        "Women's Wedding Bands",
+        "Men's Wedding Bands",
+        "Wedding Band Sets",
+        "Couples' Rings",
+        { "link": "Begin Your Journey" }
+      ],
+      "The Tiffany Difference": [
+        "The Guide to Diamonds",
+        "A Lifetime of Service",
+        "A Tiffany Ring",
+        "Responsible Sourcing",
+        "How to Choose an Engagement Ring"
+      ],
+      "Shop by Shape": [
+        "Round",
+        "Oval",
+        "Emerald",
+        "Princess",
+        "Tiffany True®",
+        "Cushion"
+      ],
+      "Shop by Setting": ["Solitaire", "Halo", "Three Stone"],
+      "Engagement Ring Collections": [
+        "The Tiffany® Setting",
+        "Tiffany True®",
+        "Tiffany Harmony®",
+        "Tiffany Soleste®",
+        "Tiffany Novo®",
+        "Tiffany & Co. Schlumberger®"
+      ],
+      "Wedding Band Collections": [
+        "Tiffany Together",
+        "Tiffany Forever",
+        "Tiffany & Co.®"
+      ]
+    }
+  },
+  "Fine Watches": {
+    "categories": {
+      "Shop By Category": [
+        "Women’s Watches",
+        "Men’s Watches",
+        "Patek Philippe",
+        { "link": "All Fine Watches" }
+      ],
+      "Curated Shops": [
+        "Diamond Watches",
+        "Tiffany Blue Watches",
+        { "link": "Explore Fine Watches" }
+      ],
+      "Shop By Collection": [
+        "Atlas®",
+        "Tiffany 1837® Makers",
+        "Tiffany Eternity",
+        "Tiffany CT60®",
+        "Tiffany East West®"
+      ]
+    }
+  },
+  "Home & Accessories": {
+    "categories": {
+      "For the Table": [
+        "Tableware",
+        "Glassware & Barware",
+        "Flatware & Trays",
+        "Coffee & Tea"
+      ],
+      "Home": ["Candles", "Decor", "Blankets & Cushions", "Explore All Home"],
+      "Leather Goods": ["Bags", "Small Leather Goods"],
+      "Accessories": [
+        "Scarves, Stoles & Ribbons",
+        "Belts",
+        "Sunglasses",
+        "Baby",
+        "Stationery, Games & Unique Objects",
+        { "link": "Explore All Leather Goods & Accessories" }
+      ],
+      "Curated Shops": [
+        "Women's Accessories",
+        "Table by Tiffany",
+        "Wedding Gifts",
+        "Housewarming Gifts"
+      ]
+    }
+  },
+  "Fragrance": {
+    "categories": {
+      "Shop by Collection": [
+        "Signature Collection",
+        "Tiffany & Love",
+        "Tiffany & Co. Wild Iris Parfum",
+        { "link": "Shop All Fragrance" }
+      ]
+    }
+  },
+  "Men’s": {
+    "categories": {
+      "Shop by Category": [
+        "Necklaces & Pendants",
+        "Bracelets",
+        "Rings",
+        "Accessories",
+        "Watches",
+        "Bar & Drinkware",
+        "Games & Novelties",
+        { "link": "Explore All Men’s" }
+      ],
+      "Discover": [
+        "Gifts for Him",
+        "Men's Engagement Rings",
+        "Tiffany & Sports",
+        "The Modern Man's Guide to Wearing Jewelry"
+      ]
+    }
+  },
+  "Stories": {
+    "categories": {
+      "Now Trending": [
+        "Now Open: The Landmark",
+        "This Is Tiffany T",
+        "This Is Tiffany HardWear",
+        "Nike/Tiffany",
+        "Discover Tiffany Lock",
+        "Table by Tiffany",
+        "Beyoncé for Tiffany & Co.",
+        "Behind the Scenes with Beyoncé and JAY-Z",
+        { "link": "View All Stories" }
+      ],
+      "The House of Tiffany & Co.": [
+        "Sustainability",
+        "Our Diamond Traceability Story",
+        "High Jewelry",
+        "The World of Tiffany",
+        "Jewelry Design and Innovation Workshop",
+        "Tiffany & Sports",
+        "The Tiffany Diamond"
+      ]
+    }
+  }
+}

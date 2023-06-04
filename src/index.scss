@@ -147,10 +147,16 @@ a {
   position: relative;
   overflow: hidden;
 
+  .slick-slide {
+    > div {
+      height: 100%;
+    }
+  }
+
   .slick-arrow {
     position: absolute;
     top: 50%;
-    z-index: 999;
+    z-index: 99;
     height: 56px;
     width: 56px;
     font-size: 0;

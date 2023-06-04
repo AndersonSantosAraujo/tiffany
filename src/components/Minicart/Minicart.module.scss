@@ -28,10 +28,11 @@ $black: #000;
   }
 
   .minicart {
-    position: fixed;
+    position: absolute;
     width: 464px;
-    height: calc(100vh - 52px);
-    top: 52px;
+    height: calc(100vh - 4px);
+    top: 0;
+    // top: 52px;
     right: 0;
     z-index: 99999;
 
