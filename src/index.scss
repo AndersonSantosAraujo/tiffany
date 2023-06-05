@@ -211,3 +211,38 @@ a {
     display: flex;
   }
 }
+.tipbar-slick {
+  position: relative;
+  overflow: hidden;
+
+  .slick-slide {
+    > div {
+      height: 100%;
+    }
+  }
+  .slick-track {
+    display: flex;
+  }
+  .slick-dots {
+    position: relative;
+    z-index: 9;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    li {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      border: 1px solid #959595;
+      margin: 10px;
+      &.slick-active {
+        background-color: #959595;
+      }
+      button {
+        display: none;
+      }
+    }
+  }
+}

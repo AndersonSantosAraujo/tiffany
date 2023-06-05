@@ -1,0 +1,20 @@
+$black: #000;
+$white: #fff;
+$main-color: #81d8d0;
+
+.footer {
+  margin-top: 100px;
+
+  &__header {
+    padding: 16px;
+    border-top: 2px solid $main-color;
+    border-bottom: 8px solid $main-color;
+
+    p {
+      font-size: 14px;
+      color: $black;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
