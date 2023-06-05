@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import styles from "./Submenu.module.scss";
+import styles from "./SubmenuMobile.module.scss";
 import { useState } from "react";
 import classNames from "classnames";
 
-const Submenu = ({ data }) => {
+const SubmenuMobile = ({ data }) => {
   const [categories, setCategories] = useState(false);
 
   return (
@@ -58,7 +58,7 @@ const Submenu = ({ data }) => {
   );
 };
 
-Submenu.propTypes = {
+SubmenuMobile.propTypes = {
   data: PropTypes.shape({
     section: PropTypes.string.isRequired,
     categories: PropTypes.arrayOf(
@@ -75,4 +75,4 @@ Submenu.propTypes = {
   }).isRequired,
 };
 
-export default Submenu;
+export default SubmenuMobile;

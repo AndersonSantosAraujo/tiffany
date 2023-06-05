@@ -1,0 +1,16 @@
+$main-color: #81d8d0;
+$black: #000;
+$white: #fff;
+
+.desktop-menu {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+}

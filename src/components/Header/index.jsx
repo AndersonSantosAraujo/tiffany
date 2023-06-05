@@ -5,12 +5,13 @@ import { CaretDown, X } from "phosphor-react";
 import styles from "./Header.module.scss";
 import classNames from "classnames";
 import MobileMenu from "../MobileMenu";
+import DesktopMenu from "../DesktopMenu";
 // import menuDesktop from "../../data/menuDesktop.json";
 
 const Header = () => {
   const [prevScroll, setPrevScroll] = useState(window.scrollY);
   const [navbarTop, setNavbarTop] = useState("0");
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const minicartCtx = useContext(MinicartContext);
 
   useEffect(() => {
@@ -163,34 +164,7 @@ const Header = () => {
         />
       </div>
 
-      <nav className={styles["header__navbar"]}>
-        <ul>
-          <li>
-            <a href="#">Jewelry</a>
-          </li>
-          <li>
-            <a href="#">Gifts</a>
-          </li>
-          <li>
-            <a href="#">Love & Engagement</a>
-          </li>
-          <li>
-            <a href="#">Fine Watches</a>
-          </li>
-          <li>
-            <a href="#">Home & Accessories</a>
-          </li>
-          <li>
-            <a href="#">Fragrance</a>
-          </li>
-          <li>
-            <a href="#">Men’s</a>
-          </li>
-          <li>
-            <a href="#">Stories</a>
-          </li>
-        </ul>
-      </nav>
+      <DesktopMenu />
 
       <MobileMenu showMenu={showMenu} setShowMenu={setShowMenu} />
     </header>

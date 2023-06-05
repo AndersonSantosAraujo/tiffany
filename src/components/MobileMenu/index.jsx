@@ -3,7 +3,7 @@ import { X } from "phosphor-react";
 import menuMobile from "../../data/menuMobile.json";
 import styles from "./MobileMenu.module.scss";
 import { useState, useEffect } from "react";
-import Submenu from "./Submenu";
+import SubmenuMobile from "./SubmenuMobile";
 
 const MobileMenu = ({ showMenu, setShowMenu }) => {
   const [data, setData] = useState([]);
@@ -11,7 +11,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
   useEffect(() => {
     const arrData = Object.keys(menuMobile).map((section) => {
       const categories = menuMobile[section].categories;
-      const mappedCategories = Object.keys(categories).map((category) => {
+      const arrCategories = Object.keys(categories).map((category) => {
         const subcategories = categories[category];
         return {
           category,
@@ -20,7 +20,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
       });
       return {
         section,
-        categories: mappedCategories,
+        categories: arrCategories,
       };
     });
 
@@ -28,7 +28,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
   }, []);
 
   return showMenu ? (
-    <div className={styles["menu-mobile"]}>
+    <nav className={styles["menu-mobile"]}>
       <div className={styles["menu-mobile__header"]}>
         <button
           className={styles["menu-mobile__header--close"]}
@@ -42,7 +42,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
       <div className={styles["menu-mobile__body"]}>
         <ul>
           {data.map((data) => (
-            <Submenu key={data.section} data={data} />
+            <SubmenuMobile key={data.section} data={data} />
           ))}
         </ul>
       </div>
@@ -80,7 +80,7 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
           Store Locator
         </a>
       </div>
-    </div>
+    </nav>
   ) : null;
 };
 
